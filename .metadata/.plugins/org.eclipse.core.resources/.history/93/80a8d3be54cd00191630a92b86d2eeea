@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Listado de Libros</title>
+<link href="css/font-awesome.all.min.css" rel="stylesheet">
+</head>
+<body>
+<section id ="listado">	
+<article>
+<img src="img/libro 1.PNG"/>
+<p class="descripcion">Los Futbolisimos</p>
+<p class="autor"> Roberto Santiago	</p>
+<p class="precios">
+<span class="precio-con-descuento">11,35€</span>
+<span class="precio-sin-descuento">11,95€</span>
+<span class="descuento">-5%</span>
+
+</p>
+<p><i class="far fa-heart"></i>
+<i class="fas fa-heart"></i></p>
+
+</article>
+<article>
+<img src="img/libro 2.PNG"/>
+<p class="descripcion">Los Futbolisimos</p>
+<p class="autor"> Roberto Santiago	</p>
+<p class="precios">
+<span class="precio-con-descuento">11,35€</span>
+<span class="precio-sin-descuento">11,95€</span>
+<span class="descuento">-5%</span>
+</p>
+<p><i class="far fa-heart"></i>
+<i class="fas fa-heart"></i></p>
+
+</article>
+<article>
+<img src="img/libro 3.PNG"/>
+<p class="descripcion">Los Futbolisimos</p>
+<p class="autor"> Roberto Santiago	</p>
+<p class="precios">
+<span class="precio-con-descuento">11,35€</span>
+<span class="precio-sin-descuento">11,95€</span>
+<span class="descuento">-5%</span>
+</p>
+<p><i class="far fa-heart"></i>
+<i class="fas fa-heart"></i></p>
+
+</article>
+</section>
+</body>
+</html>

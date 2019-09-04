@@ -1,0 +1,25 @@
+
+jul. 23, 2019 13:09:12.42 NEW SESSION
+jul. 23, 2019 13:09:12.42 [11052:13956:0723/130912.418:ERROR:browser_process_sub_thread.cc(221)] Waited 240 ms for network service
+jul. 23, 2019 13:18:25.32 [10744:8140:0723/131825.326:ERROR:browser_process_sub_thread.cc(221)] Waited 189 ms for network service
+jul. 23, 2019 13:38:12.77 [13028:12968:0723/133812.771:ERROR:browser_process_sub_thread.cc(221)] Waited 102 ms for network service
+jul. 23, 2019 13:47:10.20 [7044:7532:0723/134710.204:ERROR:shader_disk_cache.cc(258)] Failed to create shader cache entry: -2
+jul. 23, 2019 14:33:26.36 [7044:7532:0723/143326.360:ERROR:browser_process_sub_thread.cc(221)] Waited 210 ms for network service
+
+jul. 24, 2019 10:01:59.27 NEW SESSION
+jul. 24, 2019 10:01:59.27 [13636:10164:0724/100159.268:ERROR:browser_process_sub_thread.cc(221)] Waited 342 ms for network service
+jul. 24, 2019 10:09:34.08 [13008:11032:0724/100934.080:ERROR:browser_process_sub_thread.cc(221)] Waited 89 ms for network service
+jul. 24, 2019 10:12:08.36 [13740:3148:0724/101208.361:ERROR:browser_process_sub_thread.cc(221)] Waited 242 ms for network service
+jul. 24, 2019 12:00:35.82 [13152:4844:0724/120035.820:ERROR:browser_process_sub_thread.cc(221)] Waited 9 ms for network service
+jul. 24, 2019 12:18:46.83 [12468:9964:0724/121846.838:ERROR:browser_process_sub_thread.cc(221)] Waited 194 ms for network service
+jul. 24, 2019 12:19:40.31 [4616:2728:0724/121940.309:ERROR:browser_process_sub_thread.cc(221)] Waited 122 ms for network service
+jul. 24, 2019 12:41:29.10 [3824:11944:0724/124129.107:ERROR:browser_process_sub_thread.cc(221)] Waited 163 ms for network service
+jul. 24, 2019 13:34:48.14 [5028:11508:0724/133448.147:ERROR:browser_process_sub_thread.cc(221)] Waited 206 ms for network service
+
+jul. 29, 2019 08:59:36.09 NEW SESSION
+jul. 29, 2019 08:59:36.09 [12832:7016:0729/085936.088:ERROR:browser_process_sub_thread.cc(221)] Waited 109 ms for network service
+jul. 29, 2019 09:01:33.22 [13196:2388:0729/090133.228:ERROR:browser_process_sub_thread.cc(221)] Waited 755 ms for network service
+
+sept. 03, 2019 11:45:29.81 NEW SESSION
+sept. 03, 2019 11:45:29.81 [10740:12708:0903/114529.812:ERROR:browser_process_sub_thread.cc(203)] Waited 372 ms for network service
+sept. 03, 2019 11:46:15.54 [13840:13936:0903/114615.547:ERROR:browser_process_sub_thread.cc(203)] Waited 312 ms for network service

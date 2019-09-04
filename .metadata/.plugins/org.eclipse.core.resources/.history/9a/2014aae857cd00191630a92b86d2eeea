@@ -1,0 +1,5 @@
+@charset "UTF-8";
+.descripcion{
+	font-size: 0.8em;
+	color: grey;
+}

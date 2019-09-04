@@ -1,0 +1,15 @@
+1564469075919	Move 'jstl-1.2.jar' to 'lib'
+1564469095490	Copy file
+1564469260241	Delete element
+1564469569563	Copy compilation unit
+1564469575556	Delete element
+1564470158716	Delete element
+1564471153760	Rename resource 'login.css'
+1564472555195	Rename resource 'index.jsp'
+1564483417192	Rename resource '1024x1332-4806e0-55d8-11e6-8a9e-dd745a178df5ocio-libros-portadas-bonitas-hip-hip-12776296-1-esl-es-hip-hip-jpg.jpg'
+1564483423933	Rename resource '9788498387902.jpg'
+1564483427859	Rename resource '9788499086552.jpg'
+1564483431786	Rename resource 'original--8a9e-dd745a178df5ocio-libros-portadas-bonitas-un-hombre-nuevo-12776263-1-esl-es-un-hombre-nuevo-jpg.jpg'
+1564483436321	Rename resource 'port3.jpg'
+1564483570898	Delete element
+1564484098626	Encapsulate field 'img'
