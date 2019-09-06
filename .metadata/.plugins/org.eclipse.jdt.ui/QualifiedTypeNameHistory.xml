@@ -7,5 +7,10 @@
 <fullyQualifiedTypeName name="modelos.ModeloException"/>
 <fullyQualifiedTypeName name="modelos.Libro"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.mf0967_3.accesodatos.conexionbbdd"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.mf0967_3.accesodatos.LoginTreeMap"/>
+<fullyQualifiedTypeName name="sun.security.rsa.RSAKeyPairGenerator"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 </qualifiedTypeNameHistroy>
