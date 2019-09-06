@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\prueba-space2218\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\prueba-space2218\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MF0967_3" path="/Libreria" reloadable="true" source="org.eclipse.jst.jee.server:MF0967_3"/></Host>
+      <Context docBase="C:\prueba-space2218\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\prueba-space2218\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MF0967_3" path="/libreria" reloadable="true" source="org.eclipse.jst.jee.server:MF0967_3"/><Context docBase="C:\prueba-space2218\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\sala_publica_y_chat_privado" path="/sala_publica_y_chat_privado" reloadable="true" source="org.eclipse.jst.jee.server:sala_publica_y_chat_privado"/></Host>
     </Engine>
   </Service>
 </Server>
