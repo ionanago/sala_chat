@@ -9,7 +9,7 @@ public class chats {
 	private String nombre;
 	private Date fecha;
 	
-	private String errorId, errorNombre,errorFecha;
+	private String errorId, errorNombre;
 	private boolean error = false;
  chats(Long id, String nombre, Date fecha) {
 		
@@ -117,10 +117,7 @@ public String getErroNombre() {
 	return errorNombre;
 }
 
-public void setErrorFecha(String  errorFecha) {
-	setError(true);
-	this. errorFecha =  errorFecha;
-}
+
 
 	
 }

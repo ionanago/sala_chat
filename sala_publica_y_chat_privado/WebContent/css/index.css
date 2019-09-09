@@ -1,15 +1,25 @@
 @charset "UTF-8";
 
 .caja{
-	height: 400px;;
+	height: 325px;;
 	border: solid #ced4da 1px;
 	border-radius: 0.25em 0 0 0.25em ;
 	
 }
 .lista{
-	height: 400px;;
+	height: 325px;;
 	border: solid #ced4da 1px;
 	border-radius: 0 0.25em 0.25em 0 ;
+}
+
+.usuarioLogeado{
+	color:red;
+	
+	
+}
+
+.containerform{
+	margin-top: 1em !important;
 }
 
 
