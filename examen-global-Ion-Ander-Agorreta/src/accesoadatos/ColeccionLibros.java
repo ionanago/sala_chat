@@ -7,7 +7,7 @@ import modelos.ModeloException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-import org.apache.jasper.tagplugins.jstl.core.ForEach;
+
 
 
 
@@ -25,7 +25,7 @@ public ColeccionLibros() {
 		if(instancia == null) {
 			instancia = new ColeccionLibros();
 			libros.add(new Libro("libro1","pepe",(long) 123456,1));
-			libros.add(new Libro("libro2","lucas",(long)223456,2,new BigDecimal(55.65),new BigDecimal(17.00),25));
+			libros.add(new Libro("libro2","lucas",(long)223456,2,new BigDecimal("55.65"),new BigDecimal("17.00"),25));
 			libros.add(new Libro("libro3","luis",(long)323456,3));
 			//libros.add(new Libro("titulo4","autor4",(long)15689),new BigDecimal(17.95),new BigDecimal(17.00),5);
 		}
