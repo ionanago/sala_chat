@@ -2,14 +2,14 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/vistas/includes/cabecera.jsp"%>
 <header class=" col-12">
-	<h1 class="col-12">Libroteka</h1>
+	<h1 class="">Libroteka</h1>
 
 </header>
 
-<div class="row">
-	<ul class="list-group row" style="list-style:none;">
+<div class="container">
+	<ul class="list-group row" style="list-style:none">
 		<c:forEach items="${libros}" var="item">
-			<li class="col-4 list-group-item list-inline-item " style="">
+			<li class=" list-group-item col-4" >
 				<%-- <div class="col-3">
 					<img class=" center imagen" src="img/${item.img}.jpg"
 						style="height: 10rem !important;">

@@ -14,7 +14,7 @@
 <script src="js/bootstrap.min.js"></script>
 
 </head>
-<body class="container">
+<body class="">
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 

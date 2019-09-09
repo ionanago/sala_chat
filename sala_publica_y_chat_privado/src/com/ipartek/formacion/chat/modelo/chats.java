@@ -9,12 +9,9 @@ public class chats {
 	private String nombre;
 	private Date fecha;
 	
-	private String errorId, errorNombre;
+	private String errorId, errorNombre,errorFecha;
 	private boolean error = false;
-
-	
-	
-	public chats(Long id, String nombre, Date fecha) {
+ chats(Long id, String nombre, Date fecha) {
 		
 		setId(id);
 		setNombre(nombre);
@@ -98,7 +95,33 @@ public class chats {
 		return "chats [id=" + id + ", nombre=" + nombre + ", fecha=" + fecha + "]";
 	}
 	
-	
+
+public boolean isError() {
+	return error;
+}
+
+private void setError(boolean error) {
+	this.error = error;
+}
+
+public String getErrorId() {
+	return errorId;
+}
+
+public void setErrorId(String errorId) {
+	setError(true);
+	this.errorId = errorId;
+}
+
+public String getErroNombre() {
+	return errorNombre;
+}
+
+public void setErrorFecha(String  errorFecha) {
+	setError(true);
+	this. errorFecha =  errorFecha;
+}
+
 	
 }
 
