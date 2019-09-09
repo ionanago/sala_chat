@@ -17,10 +17,8 @@ INDEX VERSION 1.131+C:\prueba-space2218\.metadata\.plugins\org.eclipse.jdt.core
 4069293921.index
 4026561824.index
 4120324546.index
-3946198290.index
 4277564474.index
 2772419465.index
-2216105531.index
 1792468810.index
 165794779.index
 4085253492.index
