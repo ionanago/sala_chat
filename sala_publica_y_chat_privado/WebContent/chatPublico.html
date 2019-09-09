@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<base href="${pageContext.request.contextPath}/" />
+
 <link rel="stylesheet" href="css/fontawesome-all.min.css" />
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 
@@ -11,32 +11,36 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<base href="${pageContext.request.contextPath}/" />
 
 <title>chat</title>
 </head>
 <body>
-	<div class="container">
+	<div class="container p-2">
 
-		<div>
-			<div></div>
-			<aside></aside>
+		<div class=" row mx-auto">
+			<div class="caja col-8"><textarea class="textarea mx-auto" id="textoChat">Lorem fistrum ahorarr diodenoo
+				ullamco a peich caballo blanco caballo negroorl minim esse. No
+				puedor papaar papaar nostrud aliqua pecador. Irure aliqua nostrud
+				amatomaa voluptate reprehenderit elit cillum velit de la pradera.
+				Adipisicing aute laboris llevame al sircoo. Diodeno mamaar ex a wan
+				incididunt te voy a borrar el cerito. </textarea></div>
+			<aside class=" lista col-4"></aside>
 		</div>
-		<div>
-			<form>
-				
-					<div class="form-group">
-						<label for="mensaje">Mensaje</label> <input
-							type="email" class="form-control" id="mensaje"
-							aria-describedby="mensaje" placeholder="Escriba su mensaje"> 
-					</div>
-					
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary">Enviar</button>
-					</div>
-					
-				</form>
-			
+		<div class="col-10 mx-auto">
+			<form class="form">
+
+				<div class="form-group">
+					<input type="text" class="form-control" id="mensaje" required
+						aria-describedby="mensaje" placeholder="Escriba su mensaje">
+				</div>
+
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</div>
+
+			</form>
+
 		</div>
 
 

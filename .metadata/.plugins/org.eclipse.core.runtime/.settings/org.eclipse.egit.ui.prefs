@@ -1,2 +1,4 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>borrar funciona</message>\r\n<message>jdbc borrar no funciona</message>\r\n<message>jdbc usuarios listo</message>\r\n<message>jdbc</message>\r\n<message>jdbc mostrar funciona falta add, mod y del</message>\r\n<message>jdbc conector jar</message>\r\n<message>jstl</message>\r\n<message>fg</message>\r\n<message>dwfgdfsg</message>\r\n<message>empezando jdbc</message>\r\n</messages>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>ddd</message>\r\n<message>fzdgdas</message>\r\n<message>j</message>\r\n<message>dd</message>\r\n<message>-&gt;</message>\r\n<message>--&gt;</message>\r\n<message>patata</message>\r\n<message>nuevo</message>\r\n<message>borrar funciona</message>\r\n<message>jdbc borrar no funciona</message>\r\n</messages>
 eclipse.preferences.version=1
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

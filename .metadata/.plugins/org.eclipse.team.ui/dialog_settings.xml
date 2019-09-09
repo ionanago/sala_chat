@@ -3,10 +3,12 @@
 	<section name="SynchronizeViewSettings">
 		<item key="linkWithEditor" value="false"/>
 		<item key="lastactiveparticipant_id" value="org.eclipse.egit.ui.modelCompareParticipant"/>
-		<item key="lastactiveparticipant_sec_id" value="1567598545425"/>
+		<item key="lastactiveparticipant_sec_id" value="1567757520812"/>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1563778889727">
 		</section>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1567598545425">
+		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1567757520812">
 		</section>
 	</section>
 </section>
