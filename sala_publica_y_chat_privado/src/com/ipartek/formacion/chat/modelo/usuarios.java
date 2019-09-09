@@ -4,10 +4,22 @@ public class usuarios {
 private long id;
 private String nombre;
 
+private String errorId, errorNombre;
+private boolean error = false;
 
 public usuarios(long id, String nombre) {
-	super();
+	
 	setId(id);
+	setNombre(nombre);
+}
+
+public usuarios(String id, String nombre) {
+	try {
+		Long l = Long.parseLong(id);
+		setId(l);
+	} catch (NumberFormatException e) {
+		setErrorId("El id DEBE ser un número");
+	}
 	setNombre(nombre);
 }
 
@@ -64,6 +76,32 @@ public String toString() {
 
 
 
+
+public boolean isError() {
+	return error;
+}
+
+private void setError(boolean error) {
+	this.error = error;
+}
+
+public String getErrorId() {
+	return errorId;
+}
+
+public void setErrorId(String errorId) {
+	setError(true);
+	this.errorId = errorId;
+}
+
+public String getErroNombre() {
+	return errorNombre;
+}
+
+public void setErrorDescripcion(String  errorNombre) {
+	setError(true);
+	this. errorNombre =  errorNombre;
+}
 
 
 
