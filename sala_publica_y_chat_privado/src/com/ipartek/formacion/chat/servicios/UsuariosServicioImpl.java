@@ -17,5 +17,7 @@ public class UsuariosServicioImpl implements UsuariosServicio {
 		
 		return encontrado != null && encontrado.getPassword().equals(usuario.getPassword());
 	}
+	
+	
 
 }

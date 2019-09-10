@@ -7,6 +7,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.ipartek.formacion.chat.accesodatos.UsuariosTreeMap;
+import com.ipartek.formacion.chat.modelo.Usuarios;
+import com.ipartek.formacion.chat.servicios.ChatServicioImpl;
+
+
 @WebServlet("/chat")
 public class ChatPublicoServlet extends HttpServlet {
 
@@ -16,9 +22,14 @@ public class ChatPublicoServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		Iterable<Usuarios> usuarios = ChatServicioImpl.getInstancia().devolverUsuarios();
+
+		request.setAttribute("usuarios", usuarios);
 		
-	
 		
+		
+		
+			
 		request.getRequestDispatcher("/WEB-INF/vistas/index.jsp").forward(request, response);
 	}
 
