@@ -2,7 +2,7 @@ package com.ipartek.formacion.chat.modelo;
 
 import java.sql.Date;
 
-public class chats {
+public class Chats {
 
 	
 	private Long id;
@@ -11,7 +11,7 @@ public class chats {
 	
 	private String errorId, errorNombre;
 	private boolean error = false;
- chats(Long id, String nombre, Date fecha) {
+ Chats(Long id, String nombre, Date fecha) {
 		
 		setId(id);
 		setNombre(nombre);
@@ -19,7 +19,7 @@ public class chats {
 		
 	}
 	
-	public chats(String id, String nombre, String fecha) {
+	public Chats(String id, String nombre, String fecha) {
 		try {
 			Long l = Long.parseLong(id);
 			setId(l);
@@ -71,7 +71,7 @@ public class chats {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		chats other = (chats) obj;
+		Chats other = (Chats) obj;
 		if (fecha == null) {
 			if (other.fecha != null)
 				return false;

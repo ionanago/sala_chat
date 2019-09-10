@@ -1,19 +1,26 @@
 package com.ipartek.formacion.chat.modelo;
 
-public class usuarios {
+public class Usuarios {
 private long id;
 private String nombre;
+private String password;
+
 
 private String errorId, errorNombre;
 private boolean error = false;
 
-public usuarios(long id, String nombre) {
+public Usuarios(long id, String nombre,String password) {
 	
 	setId(id);
 	setNombre(nombre);
+	setPassword(password);
+}
+public Usuarios(String nombre , String password) {
+	this(null, nombre, password);
 }
 
-public usuarios(String id, String nombre) {
+
+public Usuarios(String id, String nombre, String password) {
 	try {
 		Long l = Long.parseLong(id);
 		setId(l);
@@ -21,6 +28,7 @@ public usuarios(String id, String nombre) {
 		setErrorId("El id DEBE ser un número");
 	}
 	setNombre(nombre);
+	setPassword(password);
 }
 
 
@@ -41,6 +49,15 @@ public void setNombre(String nombre) {
 	this.nombre = nombre;
 }
 
+public void setPassword(String password) {
+	this.password = password;
+}
+
+public String getPassword() {
+	
+	return password;
+}
+
 @Override
 public int hashCode() {
 	final int prime = 31;
@@ -58,7 +75,7 @@ public boolean equals(Object obj) {
 		return false;
 	if (getClass() != obj.getClass())
 		return false;
-	usuarios other = (usuarios) obj;
+	Usuarios other = (Usuarios) obj;
 	if (id != other.id)
 		return false;
 	if (nombre == null) {
@@ -102,6 +119,8 @@ public void setErrorDescripcion(String  errorNombre) {
 	setError(true);
 	this. errorNombre =  errorNombre;
 }
+
+
 
 
 
