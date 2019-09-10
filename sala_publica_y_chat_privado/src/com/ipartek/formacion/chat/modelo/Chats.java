@@ -6,17 +6,23 @@ public class Chats {
 
 	
 	private Long id;
-	private String nombre;
+	private String texto;
 	private Date fecha;
+	private Long idUsuario;
 	
 	private String errorId, errorNombre;
 	private boolean error = false;
- Chats(Long id, String nombre, Date fecha) {
+	
+public Chats(Long id, String texto, Date fecha, Long idUsuario) {
 		
 		setId(id);
-		setNombre(nombre);
+		setTexto(texto);
 		setFecha(fecha);
+		setIdUsuario(idUsuario);
 		
+	}
+ public Chats(String texto, Date fecha, Long idUsuario) {
+		this(null, texto, fecha, idUsuario);
 	}
 	
 	public Chats(String id, String nombre, String fecha) {
@@ -26,7 +32,7 @@ public class Chats {
 		} catch (NumberFormatException e) {
 			setErrorId("El id DEBE ser un número");
 		}
-		setNombre(nombre);
+		setTexto(texto);
 	}
 	
 	public Long getId() {
@@ -37,12 +43,12 @@ public class Chats {
 		this.id = id;
 	}
 	
-	public String getNombre() {
-		return nombre;
+	public String getTexto() {
+		return texto;
 	}
 	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setTexto(String texto) {
+		this.texto = texto;
 	}
 	
 	public Date getFecha() {
@@ -53,13 +59,19 @@ public class Chats {
 		this.fecha = fecha;
 	}
 
+	public Long getIdUsuario() {
+		return idUsuario;
+	}
+	public void setIdUsuario(Long idUsuario) {
+		this.idUsuario = idUsuario;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((fecha == null) ? 0 : fecha.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
+		result = prime * result + ((texto == null) ? 0 : texto.hashCode());
 		return result;
 	}
 
@@ -82,17 +94,17 @@ public class Chats {
 				return false;
 		} else if (!id.equals(other.id))
 			return false;
-		if (nombre == null) {
-			if (other.nombre != null)
+		if (texto == null) {
+			if (other.texto != null)
 				return false;
-		} else if (!nombre.equals(other.nombre))
+		} else if (!texto.equals(other.texto))
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "chats [id=" + id + ", nombre=" + nombre + ", fecha=" + fecha + "]";
+		return "chats [id=" + id + ", nombre=" + texto + ", fecha=" + fecha + "]";
 	}
 	
 
@@ -116,6 +128,7 @@ public void setErrorId(String errorId) {
 public String getErroNombre() {
 	return errorNombre;
 }
+
 
 
 

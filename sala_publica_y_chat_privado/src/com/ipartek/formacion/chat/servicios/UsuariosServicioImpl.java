@@ -5,11 +5,11 @@ import com.ipartek.formacion.chat.modelo.Usuarios;
 
 public class UsuariosServicioImpl implements UsuariosServicio {
 
-	private static UsuariosServicioImpl loginServicioImpl = new UsuariosServicioImpl();
+	private static UsuariosServicioImpl UsuarioServicioImpl = new UsuariosServicioImpl();
 	
 	private UsuariosServicioImpl() {}
 	
-	public static UsuariosServicioImpl getInstancia() { return loginServicioImpl; }
+	public static UsuariosServicioImpl getInstancia() { return UsuarioServicioImpl; }
 	
 	@Override
 	public boolean autenticar(Usuarios usuario) {

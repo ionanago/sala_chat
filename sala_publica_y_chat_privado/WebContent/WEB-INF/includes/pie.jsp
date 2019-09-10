@@ -2,8 +2,10 @@
     pageEncoding="UTF-8"%>
 
 
-<footer>
-	<p>&copy; 2019 I.A.A.A.</p>
+<footer >
+<div class="container">
+	<p class ="mx-auto">&copy; 2019 I.A.A.A.</p>
+	</div>
 </footer>
 </body>
 </html>
