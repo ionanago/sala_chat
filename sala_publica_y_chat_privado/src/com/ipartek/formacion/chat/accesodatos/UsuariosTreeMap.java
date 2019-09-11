@@ -33,7 +33,7 @@ private static UsuariosTreeMap instancia = new UsuariosTreeMap();
 		Statement s=null;
 		try {
 			s = super.con.createStatement();
-			String sql = "SELECT * FROM chat.usuarios";
+			String sql = "SELECT * FROM usuarios";
 			//SELECT * FROM libreria_1.libros;
 			 rs = s.executeQuery(sql);
 			

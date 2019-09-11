@@ -41,3 +41,6 @@ sept. 06, 2019 13:56:04.03 [1312:10648:0906/135604.037:ERROR:browser_process_sub
 
 sept. 09, 2019 13:01:26.89 NEW SESSION
 sept. 09, 2019 13:01:26.89 [1976:11608:0909/130126.889:ERROR:browser_process_sub_thread.cc(203)] Waited 251 ms for network service
+
+sept. 10, 2019 14:35:48.30 NEW SESSION
+sept. 10, 2019 14:35:48.30 [7612:9940:0910/143548.068:ERROR:browser_process_sub_thread.cc(203)] Waited 109 ms for network service

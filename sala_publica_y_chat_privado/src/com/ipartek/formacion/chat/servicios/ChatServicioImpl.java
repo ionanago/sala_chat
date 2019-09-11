@@ -1,5 +1,7 @@
 package com.ipartek.formacion.chat.servicios;
 
+import com.ipartek.formacion.chat.accesodatos.ChatsTreeMap;
+import com.ipartek.formacion.chat.accesodatos.UsuariosTreeMap;
 import com.ipartek.formacion.chat.modelo.Chats;
 import com.ipartek.formacion.chat.modelo.Usuarios;
 
@@ -14,12 +16,12 @@ private ChatServicioImpl() {}
 
 	@Override
 	public Iterable<Chats> devolverChats() {
-		return null;
+		return ChatsTreeMap.getInstancia().getAll();
 	}
 
 	@Override
 	public Iterable<Usuarios> devolverUsuarios() {
-		return null;
+		return UsuariosTreeMap.getInstancia().getAll();
 	}
 
 }

@@ -41,7 +41,7 @@ private static ChatsTreeMap instancia = new ChatsTreeMap();
 		try {
 			while(rs.next()) {
 				try {
-					chats.put(rs.getLong("id"), new Chats(rs.getLong("id"), rs.getString("texto"), rs.getDate("fecha"), rs.getLong("idUsuario")));
+					chats.put(rs.getLong("id"), new Chats(rs.getLong("id"), rs.getString("chat"), rs.getDate("fecha"), rs.getLong("idUsuario")));
 				} catch (SQLException e) {
 					
 					e.printStackTrace();

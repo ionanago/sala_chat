@@ -13,4 +13,11 @@
 <fullyQualifiedTypeName name="com.ipartek.formacion.mf0967_3.accesodatos.LoginTreeMap"/>
 <fullyQualifiedTypeName name="sun.security.rsa.RSAKeyPairGenerator"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.CrudAble"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.ChatsCrudAble"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.ChatsTreeMap"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.modelo.Chats"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.UsuariosTreeMap"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.servicios.UsuariosServicioImpl"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.modelo.Usuarios"/>
 </qualifiedTypeNameHistroy>

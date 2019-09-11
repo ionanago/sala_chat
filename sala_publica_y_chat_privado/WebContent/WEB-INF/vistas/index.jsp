@@ -31,10 +31,10 @@
 			</div>
 			<aside class=" lista col-3">
 			<ul>
-			<c:forEach items="${usuarios}" var="usuario">
-			<c:if test=" ${ usuario.nombre == sessionScope.usuario.nombre}">
-			<li><a href="" >${usuario.nombre}</a>	</li>
-			</c:if>
+			<c:forEach items="${usuarios}" var="usuario2">
+			 <c:if test=" ${ usuario2.nombre == sessionScope.usuario.nombre}">
+			<li><a href="" >${usuario2.nombre}</a>	</li>
+			 </c:if>
 			</c:forEach>
 			</ul>
 			

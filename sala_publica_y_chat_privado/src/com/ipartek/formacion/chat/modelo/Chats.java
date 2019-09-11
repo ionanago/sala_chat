@@ -10,7 +10,7 @@ public class Chats {
 	private Date fecha;
 	private Long idUsuario;
 	
-	private String errorId, errorNombre;
+	private String errorId, errorTexto;
 	private boolean error = false;
 	
 public Chats(Long id, String texto, Date fecha, Long idUsuario) {
@@ -25,7 +25,7 @@ public Chats(Long id, String texto, Date fecha, Long idUsuario) {
 		this(null, texto, fecha, idUsuario);
 	}
 	
-	public Chats(String id, String nombre, String fecha) {
+	public Chats(String id, String texto, String fecha) {
 		try {
 			Long l = Long.parseLong(id);
 			setId(l);
@@ -104,7 +104,7 @@ public Chats(Long id, String texto, Date fecha, Long idUsuario) {
 
 	@Override
 	public String toString() {
-		return "chats [id=" + id + ", nombre=" + texto + ", fecha=" + fecha + "]";
+		return "chats [id=" + id + ", texto=" + texto + ", fecha=" + fecha + "]";
 	}
 	
 
@@ -125,8 +125,8 @@ public void setErrorId(String errorId) {
 	this.errorId = errorId;
 }
 
-public String getErroNombre() {
-	return errorNombre;
+public String getErroTexto() {
+	return errorTexto;
 }
 
 
