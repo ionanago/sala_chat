@@ -9,23 +9,28 @@ public class Chats {
 	private String texto;
 	private Date fecha;
 	private Long idUsuario;
+	private String nombreUsuario;
 	
+	
+	
+
 	private String errorId, errorTexto;
 	private boolean error = false;
 	
-public Chats(Long id, String texto, Date fecha, Long idUsuario) {
+public Chats(Long id, String texto, Date fecha, Long idUsuario, String nombreUsuario) {
 		
 		setId(id);
 		setTexto(texto);
 		setFecha(fecha);
 		setIdUsuario(idUsuario);
+		setNombreUsuario(nombreUsuario);
 		
 	}
- public Chats(String texto, Date fecha, Long idUsuario) {
-		this(null, texto, fecha, idUsuario);
+ public Chats(String texto, Date fecha, Long idUsuario , String nombreUsuario) {
+		this(null, texto, fecha, idUsuario, nombreUsuario);
 	}
 	
-	public Chats(String id, String texto, String fecha) {
+	public Chats(String id, String texto, String fecha, String nombreUsuario) {
 		try {
 			Long l = Long.parseLong(id);
 			setId(l);
@@ -33,6 +38,7 @@ public Chats(Long id, String texto, Date fecha, Long idUsuario) {
 			setErrorId("El id DEBE ser un número");
 		}
 		setTexto(texto);
+		setNombreUsuario(nombreUsuario);
 	}
 	
 	public Long getId() {
@@ -64,6 +70,15 @@ public Chats(Long id, String texto, Date fecha, Long idUsuario) {
 	}
 	public void setIdUsuario(Long idUsuario) {
 		this.idUsuario = idUsuario;
+	}
+	
+	
+	
+	public String getNombreUsuario() {
+		return nombreUsuario;
+	}
+	public void setNombreUsuario(String nombreUsuario) {
+		this.nombreUsuario = nombreUsuario;
 	}
 	@Override
 	public int hashCode() {
