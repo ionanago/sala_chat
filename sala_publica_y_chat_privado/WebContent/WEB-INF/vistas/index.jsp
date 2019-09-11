@@ -36,9 +36,9 @@
 		</aside>
 	</div>
 	<div class="col-10 mx-auto containerform">
-		<form class="form">
+		<form class="form" action="/EviarChat1">
 			<div class="form-group">
-				<input type="text" class="form-control" id="mensaje" required
+				<input type="text" class="form-control" id="mensaje" required="required"
 					aria-describedby="mensaje" placeholder="Escriba su mensaje">
 			</div>
 			<div class="form-group">

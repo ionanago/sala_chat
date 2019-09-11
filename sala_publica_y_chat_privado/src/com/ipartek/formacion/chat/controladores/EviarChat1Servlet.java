@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ipartek.formacion.chat.servicios.ChatServicio;
+import com.ipartek.formacion.chat.servicios.ChatServicioImpl;
+
 /**
  * Servlet implementation class EviarChat1Servlet
  */
@@ -21,9 +24,12 @@ public class EviarChat1Servlet extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf8");
+		ChatServicio chatservivio	= ChatServicioImpl.getInstancia();	
 		
 		
-	
+		
+		
 		request.getRequestDispatcher("/chat").forward(request, response);
 	}
 
