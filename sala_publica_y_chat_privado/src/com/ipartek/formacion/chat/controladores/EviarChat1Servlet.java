@@ -13,7 +13,7 @@ import com.ipartek.formacion.chat.servicios.ChatServicioImpl;
 /**
  * Servlet implementation class EviarChat1Servlet
  */
-@WebServlet("/EviarChat1")
+@WebServlet("/enviarChat1")
 public class EviarChat1Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
