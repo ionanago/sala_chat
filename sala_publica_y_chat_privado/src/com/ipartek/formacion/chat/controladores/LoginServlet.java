@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ipartek.formacion.chat.accesodatos.UsuariosTreeMap;
 import com.ipartek.formacion.chat.modelo.Usuarios;
 import com.ipartek.formacion.chat.servicios.UsuariosServicioImpl;
 
@@ -25,7 +26,11 @@ public class LoginServlet extends HttpServlet {
 		Usuarios usuario = new Usuarios( nombre, password);
 		
 		if(UsuariosServicioImpl.getInstancia().autenticar(usuario)) {
-			request.getSession().setAttribute("usuario", usuario);
+			Usuarios usuarioLoged = UsuariosTreeMap.getInstancia().getByName(usuario.getNombre());
+			
+			
+			request.getSession().setAttribute("usuario", usuarioLoged);
+			System.out.println(usuarioLoged);
 			request.getRequestDispatcher("/chat").forward(request, response);
 		} else {
 			request.setAttribute("usuario", usuario);

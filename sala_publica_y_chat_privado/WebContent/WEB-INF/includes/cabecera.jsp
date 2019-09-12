@@ -42,7 +42,8 @@
 			</ul>
 			<ul class="navbar-nav">
 				<c:if test="${sessionScope.usuario != null}">
-						<li class="nav-item"><span class="navbar-text"> Hola, ${usuario.nombre} : </span>
+						 <c:set var="idUL" value="${sessionScope.usuario.id}"/>
+						<li class="nav-item"><span class="navbar-text"> Hola, ${usuario.nombre}  </span> <span>${usuario.id}</span>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="logout">SALIR</a>
 						</li>

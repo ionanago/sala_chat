@@ -25,8 +25,8 @@
 		<aside class=" lista col-3">
 			<ul>
 				<c:forEach items="${usuarios}" var="usuario2">
-					<%-- <span>---- ${sessionScope.usuario.nombre}  :  ${usuario2.nombre} ----</span>--%>
-					
+					<%-- <span>---- ${sessionScope.usuario.id}  :  ${usuario2.nombre} ----</span>--%>
+					<p> ${sessionScope.usuario.id}  :  ${usuario2.nombre}</p>
 					<c:if test="${sessionScope.usuario.nombre != usuario2.nombre}">
 						<li><a href=""> ${usuario2.nombre}</a></li>
 					</c:if>
@@ -38,8 +38,10 @@
 	<div class="col-10 mx-auto containerform">
 		<form class="form" action="/eniarChat1">
 			<div class="form-group">
-				<input type="text" class="form-control" id="mensaje" required="required"
-					aria-describedby="mensaje" placeholder="Escriba su mensaje">
+				<input type="text" class="form-control" id="texto" required="required"
+					aria-describedby="texto" placeholder="Escriba su mensaje" name="texto">
+					<input type="hidden" class="form-control" id=idUsuario value="${idUL}" name="idUsuario">
+					<p>${idUL}</p>
 			</div>
 			<div class="form-group">
 				<button type="submit" class="btn btn-primary">Enviar</button>
