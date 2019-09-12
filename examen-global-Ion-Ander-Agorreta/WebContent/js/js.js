@@ -6,6 +6,9 @@ $(function() {
 		e.preventDefault();
 
 	});
+	
+	
+	
 //	$(".BorrarLibrocomplejo").click(function(e) {
 //		e.preventDefault();
 //		var padre = $(this).parent().parent();
@@ -71,14 +74,27 @@ $(function() {
  // });
 })
 
+
+
+
+
+
+
+
 function editar(t,e) {
 	e.preventDefault();
-	var padre = $(t).parent().parent(), i = 2;
+	
+	var id = $(this).prev().val();
+	console.log(id);
+	
+	var padre = $(t).parent().parent().parent(), i = 1;
 	padre.find("td:not(:last-child)").each(function(){
 		
 		$("#formMod:nth-child(" + i + ") input").val($(this).html());
 		console.log($("#formMod div:nth-child(" + i + ") input").val($(this).html()));
 		
 		i++;
-	});
+	})
+	$("#formMod:nth-child(" + i + ") input").val($("ID : "+id).html());
+	;
 };

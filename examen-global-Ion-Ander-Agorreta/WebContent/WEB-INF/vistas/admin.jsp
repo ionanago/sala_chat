@@ -9,8 +9,6 @@
 			<th>Autor</th>
 			<th>ISBN</th>
 			<th>numero imagen</th>
-			<th>opciones</th>
-
 			<th><a class="btn btn-primary" href="#" data-toggle="modal"
 				data-target="#añadir" id="sfa">Añadir</a></th>
 		</tr>
@@ -20,22 +18,20 @@
 			<tr>
 				<td>${libros.titulo}</td>
 				<td>${libros.autor}</td>
-				<td>${libros.id}</td>
+				<td>${libros.isbn}</td>
 				<td>${libros.img}</td>
 				<td>
-					<form action="javascript:void(0);">
-						<button class="btn btn-primary " data-toggle="modal"
-							data-target="#modificar" onclick="editar(this,event)">Editar</button>
-							<input type="hidden" value="${libros.id}" name="cabramod" id="cabramod">
-					</form>
+				<span stYle="visivility:hidden"></span>
+				<a class="btn btn-primary " href="#" data-toggle="modal"
+					data-target="#modificar" onclick="editar(this,event)">Editar</a>
+					
 					<form action="BorrarServlet" method="post">
-						<input type="hidden" value="${libros.id}" name="cabra" id="cabra">
-						<p>${libros.id}</p>
+						<input type="hidden" value="${libros.id}" name="cabra" id ="cabra">
+						
 						<button class="btn btn-danger ">Borrar</button>
-						<%--BorrarLibroSencillo --%>
-
-					</form>
-				</td>
+						<%--BorrarLibroSencillo  <p>${libros.id}</p>--%>
+						
+					</form></td>
 			</tr>
 		</c:forEach>
 	</tbody>
@@ -125,8 +121,13 @@
 						<input type="number" id="isbnm" name="isbnm" class="form-control"
 							placeholder="" autofocus>
 					</div>
+					<div>
+						<label for="id">ID</label>
+						<input type="number" id="id" name="id" class="form-control"
+							placeholder="" autofocus readonly="readonly">
+					</div>
 
-
+					<br>
 					<button class="btn btn-lg btn-primary btn-block" type="submit">Modificar
 						Libro</button>
 
