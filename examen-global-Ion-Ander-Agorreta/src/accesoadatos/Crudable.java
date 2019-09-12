@@ -1,7 +1,5 @@
 package accesoadatos;
 
-import modelos.Libro;;
-
 public interface Crudable<T> {
 	
 	public Iterable<T> getAll();

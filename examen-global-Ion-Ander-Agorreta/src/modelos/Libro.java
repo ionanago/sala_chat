@@ -40,7 +40,15 @@ public class Libro {
 	}
 	
 	
-	
+
+	public Libro(int id,String titulo, String autor, Long isbn ) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.isbn = isbn;
+		setId(id);
+		
+		
+	}
 	
 	public Libro(String titulo, String autor, Long isbn) {
 		this.titulo = titulo;

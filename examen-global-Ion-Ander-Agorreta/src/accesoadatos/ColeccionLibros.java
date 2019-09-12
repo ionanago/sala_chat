@@ -75,7 +75,13 @@ public ColeccionLibros() {
 
 	@Override
 	public void modificar(Libro objeto) {
-		
+	//complementosModa[2].setPrecio(tuNuevoPrecio);
+		Libro libroviejo = libros.get(objeto.getId());
+	libroviejo.setId(objeto.getId());
+	libroviejo.setTitulo(objeto.getTitulo());
+	libroviejo.setAutor(objeto.getAutor());
+	libroviejo.setIsbn(objeto.getIsbn());
+	
 		
 	}
 	public int buscarPorId(int id){
