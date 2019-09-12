@@ -3,6 +3,7 @@ package modelos;
 import java.math.BigDecimal;
 
 public class Libro {
+	private int id;
 	private String titulo;
 	private String autor;
 	private long isbn;
@@ -10,11 +11,24 @@ public class Libro {
 	private BigDecimal precioAntes;
 	private int descuento;
 	private int img;
+	private static int countId=3;
 	
 	
 
 	public Libro(String titulo, String autor, long isbn,int img, BigDecimal precio, BigDecimal precioAntes, int descuento) {
 		super();
+		this.titulo = titulo;
+		this.autor = autor;
+		this.isbn = isbn;
+		this.precio = precio;
+		this.precioAntes = precioAntes;
+		this.descuento = descuento;
+		this.img=img;
+		
+	}
+	public Libro( int id,String titulo, String autor, long isbn,int img, BigDecimal precio, BigDecimal precioAntes, int descuento) {
+		super();
+		setId(id);
 		this.titulo = titulo;
 		this.autor = autor;
 		this.isbn = isbn;
@@ -41,6 +55,30 @@ public class Libro {
 		this.isbn = isbn;
 		this.setImg(img);
 		
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getCountId() {
+		return countId;
+	}
+
+
+
+
+	public  void setCountId() {
+		countId++;
+		setId(countId); 
 	}
 
 

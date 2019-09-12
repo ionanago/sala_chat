@@ -7,9 +7,9 @@
 </header>
 
 <div class="container">
-	<ul class="list-group row" style="list-style:none">
+	<ul class="list-group list-group-horizontal row" style="list-style:none">
 		<c:forEach items="${libros}" var="item">
-			<li class=" list-group-item col-4" >
+			<li class=" list-group-item  col-4" >
 				<%-- <div class="col-3">
 					<img class=" center imagen" src="img/${item.img}.jpg"
 						style="height: 10rem !important;">
