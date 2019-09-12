@@ -26,7 +26,6 @@
 			<ul>
 				<c:forEach items="${usuarios}" var="usuario2">
 					<%-- <span>---- ${sessionScope.usuario.id}  :  ${usuario2.nombre} ----</span>--%>
-					<p> ${sessionScope.usuario.id}  :  ${usuario2.nombre}</p>
 					<c:if test="${sessionScope.usuario.nombre != usuario2.nombre}">
 						<li><a href=""> ${usuario2.nombre}</a></li>
 					</c:if>
@@ -36,15 +35,16 @@
 		</aside>
 	</div>
 	<div class="col-10 mx-auto containerform">
-		<form class="form" action="/eniarChat1">
+		<form class="form" action="/sala_publica_y_chat_privado/enviarChat1" method="post">
 			<div class="form-group">
 				<input type="text" class="form-control" id="texto" required="required"
 					aria-describedby="texto" placeholder="Escriba su mensaje" name="texto">
-					<input type="hidden" class="form-control" id=idUsuario value="${idUL}" name="idUsuario">
-					<p>${idUL}</p>
+					<input type="hidden" class="form-control" id=idUsuario value="${sessionScope.usuario.id}" name="idUsuario">
+					
 			</div>
 			<div class="form-group">
 				<button type="submit" class="btn btn-primary">Enviar</button>
+				<%-- <p>${ sessionScope.usuario.id}</p> --%>
 			</div>
 
 		</form>

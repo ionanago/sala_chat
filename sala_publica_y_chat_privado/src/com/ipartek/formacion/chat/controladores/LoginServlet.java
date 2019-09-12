@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
 		String nombre = request.getParameter("nombre");
 		String password = request.getParameter("password");
 		
-		Usuarios usuario = new Usuarios( nombre, password);
+		Usuarios usuario = new Usuarios(nombre, password);
 		
 		if(UsuariosServicioImpl.getInstancia().autenticar(usuario)) {
 			Usuarios usuarioLoged = UsuariosTreeMap.getInstancia().getByName(usuario.getNombre());
