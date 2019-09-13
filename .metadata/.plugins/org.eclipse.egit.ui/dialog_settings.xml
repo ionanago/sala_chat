@@ -30,13 +30,7 @@
 			<item value="false"/>
 		</list>
 		<list key="C:\prueba-space2218\.git">
-			<item value="false"/>
-			<item value="ionanago &lt;51776373+ionanago@users.noreply.github.com&gt;"/>
-			<item value="efrfgf"/>
-			<item value="ionanago &lt;51776373+ionanago@users.noreply.github.com&gt;"/>
-			<item value="72a8457eb73a1f172a3bd8a7687933e474dd122a"/>
-			<item value="0"/>
-			<item value="false"/>
+			<item value="empty"/>
 		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">

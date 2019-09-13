@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="accesoadatos.ColeccionLibros"/>
 <fullyQualifiedTypeName name="modelos.ModeloException"/>
 <fullyQualifiedTypeName name="modelos.Libro"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.ipartek.formacion.mf0967_3.accesodatos.conexionbbdd"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
@@ -16,8 +15,11 @@
 <fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.CrudAble"/>
 <fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.ChatsCrudAble"/>
 <fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.ChatsTreeMap"/>
-<fullyQualifiedTypeName name="com.ipartek.formacion.chat.modelo.Chats"/>
-<fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.UsuariosTreeMap"/>
 <fullyQualifiedTypeName name="com.ipartek.formacion.chat.servicios.UsuariosServicioImpl"/>
 <fullyQualifiedTypeName name="com.ipartek.formacion.chat.modelo.Usuarios"/>
+<fullyQualifiedTypeName name="java.util.function.ToLongFunction"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.accesodatos.UsuariosTreeMap"/>
+<fullyQualifiedTypeName name="com.ipartek.formacion.chat.modelo.Chats"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

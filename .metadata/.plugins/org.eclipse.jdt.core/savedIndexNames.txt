@@ -8,7 +8,6 @@ INDEX VERSION 1.131+C:\prueba-space2218\.metadata\.plugins\org.eclipse.jdt.core
 1459523266.index
 3384131066.index
 2216430314.index
-4014862676.index
 384908024.index
 2817729942.index
 443305200.index
@@ -31,7 +30,6 @@ INDEX VERSION 1.131+C:\prueba-space2218\.metadata\.plugins\org.eclipse.jdt.core
 753608048.index
 646436966.index
 2825928838.index
-3455430108.index
 3442467247.index
 2458999842.index
 2847351134.index
@@ -55,9 +53,7 @@ INDEX VERSION 1.131+C:\prueba-space2218\.metadata\.plugins\org.eclipse.jdt.core
 1792468810.index
 2313888011.index
 165794779.index
-1567823383.index
 3232291301.index
-4085253492.index
 972068876.index
 2845807539.index
 3683127157.index
