@@ -1,5 +1,6 @@
 package com.ipartek.formacion.chat.accesodatos;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -68,6 +69,27 @@ private static ChatsTreeMap instancia = new ChatsTreeMap();
 		Long id = chats.lastKey() + 1;
 		chat.setId(id);
 		chats.put(id, chat);
+		insertarBd(chats.get(id));
+	}
+
+	private void insertarBd(Chats chat) {
+		//c.id, c.chat, c.fecha, c.idUsuario
+		String sql = "INSERT INTO chats (chat,fecha,idUsuario) VALUES(?,?,?)";
+
+		try (PreparedStatement ps = con.prepareStatement(sql)) {
+			ps.setString(1, chat.getTexto());
+			ps.setDate(2,chat.getFecha() );
+			ps.setLong(3, chat.getIdUsuario());
+			
+			
+			
+			ps.executeUpdate();
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		
+		
 	}
 
 	@Override
