@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 			
 			
 			request.getSession().setAttribute("usuario", usuarioLoged);
-			System.out.println(usuarioLoged);
+			//System.out.println(usuarioLoged);
 			request.getRequestDispatcher("/chat").forward(request, response);
 		} else {
 			request.setAttribute("usuario", usuario);

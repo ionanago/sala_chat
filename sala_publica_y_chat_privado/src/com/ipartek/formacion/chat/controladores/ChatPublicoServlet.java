@@ -25,7 +25,7 @@ public class ChatPublicoServlet extends HttpServlet {
 		Iterable<Usuarios> usuarios = ChatServicioImpl.getInstancia().devolverUsuarios();
 		Iterable<Chats> chats = ChatServicioImpl.getInstancia().devolverChats();
 		//System.out.println(chats);
-		System.out.println(usuarios);
+		//System.out.println(usuarios);
 		request.setAttribute("usuarios", usuarios);
 		
 		request.setAttribute("chats", chats);
