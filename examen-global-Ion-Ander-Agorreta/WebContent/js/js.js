@@ -84,10 +84,11 @@ $(function() {
 function editar(t,e) {
 	e.preventDefault();
 	
-	var id = $(this).prev().val();
+	var id = $(t).prev().text();
 	console.log(id);
 	
-	var padre = $(t).parent().parent().parent(), i = 2;
+	
+	var padre = $(t).parent().parent(), i = 2;
 	padre.find("td:not(:last-child)").each(function(){
 		
 		$("#formMod:nth-child(" + i + ") input").val($(this).html());
@@ -97,6 +98,6 @@ function editar(t,e) {
 		
 	})
 	
-	$("#formMod:nth-child(" + i + ") input").val($("ID : "+id).html());
+	$("#formMod div:nth-child(" + --i + ") input").val("ID : " + id);
 	
 };

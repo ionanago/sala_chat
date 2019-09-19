@@ -21,7 +21,7 @@
 				<td>${libros.isbn}</td>
 				<td>${libros.img}</td>
 				<td>
-				<span stYle="visivility:hidden"></span>
+				<span stYle="visibility:hidden">${libros.id}</span>
 				<a class="btn btn-primary " href="#" data-toggle="modal"
 					data-target="#modificar" onclick="editar(this,event)">Editar</a>
 					
@@ -123,7 +123,7 @@
 					</div>
 					<div>
 						<label for="id">ID</label>
-						<input type="number" id="id" name="id" class="form-control"
+						<input type="text" id="id" name="id" class="form-control"
 							placeholder="" autofocus readonly="readonly">
 					</div>
 
