@@ -201,5 +201,5 @@
   <uri name="http://xmlns.jcp.org/xml/ns/javaee/web-partialresponse_2_0.xsd" uri="jar:file:/C:/Program Files/eclipse/plugins/org.eclipse.jst.standard.schemas_1.2.300.v201903222120.jar!/dtdsAndSchemas/web-partialresponse_2_0.xsd"/>
   <uri name="http://xmlns.jcp.org/xml/ns/javaee/web-partialresponse_2_2.xsd" uri="jar:file:/C:/Program Files/eclipse/plugins/org.eclipse.jst.standard.schemas_1.2.300.v201903222120.jar!/dtdsAndSchemas/web-partialresponse_2_2.xsd"/>
   <uri name="http://xmlns.jcp.org/xml/ns/javaee/web-partialresponse_2_3.xsd" uri="jar:file:/C:/Program Files/eclipse/plugins/org.eclipse.jst.standard.schemas_1.2.300.v201903222120.jar!/dtdsAndSchemas/web-partialresponse_2_3.xsd"/>
-  <uri id="org.w3c.xinclude" name="http://www.w3.org/2001/XInclude" uri="jar:file:/C:/Program Files/eclipse/plugins/org.eclipse.wst.xsl.core_1.2.0.v201903222120.jar!/xslt-schemas/xinclude.xsd"/>
+  <uri id="org.w3c.xinclude" name="http://www.w3.org/2001/XInclude" uri="jar:file:/C:/Program Files/eclipse/plugins/org.eclipse.wst.xsl.core_1.2.100.v201907231732.jar!/xslt-schemas/xinclude.xsd"/>
 </catalog>
